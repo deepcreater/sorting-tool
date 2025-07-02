@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Sort Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Text Sort Tool</h1>
+        
+        <div class="control-panel">
+            <div class="file-upload">
+                <label for="file-input">Choose a text file:</label>
+                <input type="file" id="file-input" accept=".txt">
+            </div>
+            
+            <div class="options">
+                <label>Sorting Algorithm:
+                    <select id="algorithm">
+                        <option value="quick">Quick Sort</option>
+                        <option value="merge">Merge Sort</option>
+                        <option value="heap">Heap Sort</option>
+                        <option value="random">Random Sort</option>
+                    </select>
+                </label>
+                
+                <label class="checkbox">
+                    <input type="checkbox" id="unique"> Remove duplicates
+                </label>
+            </div>
+            
+            <button id="sort-btn">Sort Text</button>
+        </div>
+        
+        <div class="results">
+            <h2>Results</h2>
+            <div class="stats">
+                <span id="word-count">0 words</span>
+                <span id="unique-count">0 unique</span>
+                <span id="time">0ms</span>
+            </div>
+            <textarea id="output" readonly></textarea>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
