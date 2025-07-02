@@ -1,4 +1,0 @@
-The quick brown fox jumps over the lazy dog.
-This is a sample text file for testing the sort tool.
-It contains several words, some of which are repeated.
-Repeated words help test the duplicate removal feature.
